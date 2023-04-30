@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidMusic</string>
+    <string name="Title">Music Test</string>
+    <string name="start">Music Start</string>
+    <string name="stop">Music Stop</string>
+    <string name="loop">Loop</string>
+</resources>
