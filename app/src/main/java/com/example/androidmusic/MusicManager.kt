@@ -9,7 +9,7 @@ class MusicManager(context: Context) {
 
     fun stertMusic() {
         // MediaPlayer型のmediaPlayer変数にMediaPlayerクラスのcreateメソッドで音楽を挿入
-        mediaPlayer = MediaPlayer.create(myContext,R.raw.Debussy_clair_de_lune)
+        mediaPlayer = MediaPlayer.create(myContext,R.raw.debussy_clair_de_lune)
         // mediaPlayer型のmediaPlayer変数のisLooping変数にtrueを代入
         mediaPlayer.isLooping = true
         // mediaPlayer変数のstertメソッド呼び出し
