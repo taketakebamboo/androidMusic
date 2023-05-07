@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/musicTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -45,18 +45,18 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="@+id/musicTitle"
+        app:layout_constraintStart_toStartOf="@+id/musicTitle"
+        app:layout_constraintTop_toBottomOf="@+id/musicTitle" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/musicSec"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/playindex"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/musicTitle"
+        app:layout_constraintStart_toStartOf="@+id/musicTitle"
         app:layout_constraintTop_toBottomOf="@+id/seekBar" />
 
 
