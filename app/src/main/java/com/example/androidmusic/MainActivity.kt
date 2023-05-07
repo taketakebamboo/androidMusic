@@ -7,6 +7,7 @@ import android.widget.Switch
 
 class MainActivity : AppCompatActivity() {
     private val musicManager: MusicManager = MusicManager(this@MainActivity)
+    private var startFlag: Boolean = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -16,7 +17,11 @@ class MainActivity : AppCompatActivity() {
 
         // stertButtonを押したときの処理を記述
         strbtn.setOnClickListener {
-            musicManager.stertMusic()
+            if(!startFlag){
+                musicManager.stertMusic()
+                startFlag = true
+            }
+
         }
 
         //stopButton
@@ -24,7 +29,10 @@ class MainActivity : AppCompatActivity() {
 
         // stopButtonを押したときの処理を記述
         stpbtn.setOnClickListener {
-            musicManager.stopMusic()
+            if(startFlag){
+                musicManager.stopMusic()
+                startFlag = false
+            }
         }
 
         // loopSwitch
