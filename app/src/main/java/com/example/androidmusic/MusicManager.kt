@@ -7,12 +7,12 @@ class MusicManager(context: Context) {
     private lateinit var mediaPlayer: MediaPlayer
     private val myContext: Context = context
 
-    fun stertMusic() {
+    fun startMusic() {
         // MediaPlayer型のmediaPlayer変数にMediaPlayerクラスのcreateメソッドで音楽を挿入
         mediaPlayer = MediaPlayer.create(myContext,R.raw.debussy_clair_de_lune)
         // mediaPlayer型のmediaPlayer変数のisLooping変数にtrueを代入
         mediaPlayer.isLooping = true
-        // mediaPlayer変数のstertメソッド呼び出し
+        // mediaPlayer変数のstartメソッド呼び出し
         mediaPlayer.start()
     }
 

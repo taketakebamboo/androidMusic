@@ -12,13 +12,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //stertButton
+        //startButton
         val strbtn: Button = findViewById(R.id.startbutton)
 
-        // stertButtonを押したときの処理を記述
+        // startButtonを押したときの処理を記述
         strbtn.setOnClickListener {
             if(!startFlag){
-                musicManager.stertMusic()
+                musicManager.startMusic()
                 startFlag = true
             }
 
