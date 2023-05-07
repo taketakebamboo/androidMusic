@@ -33,9 +33,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // loopSwitch
-        // val loopswt: Switch = findViewById(R.id.loopswitch)
-
     }
 
     override fun onDestroy() {
