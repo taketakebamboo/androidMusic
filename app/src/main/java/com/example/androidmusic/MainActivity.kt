@@ -20,17 +20,18 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        // playButtonとposeButtonを押したときの処理と画像処理
         binding.playImage.setOnClickListener {
             when(startFlag) {
                 false -> {
                     musicManager.startMusic()
                     startFlag = true
-                    binding.playImage.setImageResource(R.drawable.playbutton_300x300)
+                    binding.playImage.setImageResource(R.drawable.posebutton_300x300)
                 }
                 true -> {
                     musicManager.stopMusic()
                     startFlag = false
-                    binding.playImage.setImageResource(R.drawable.posebutton_300x300)
+                    binding.playImage.setImageResource(R.drawable.playbutton_300x300)
                 }
             }
         }
