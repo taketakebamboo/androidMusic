@@ -3,6 +3,7 @@ package com.example.androidmusic
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.SeekBar
 import android.widget.Switch
 import com.example.androidmusic.databinding.ActivityMainBinding
 
@@ -32,6 +33,23 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+
+        binding.seekBar.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
+            // 値が変更された時に呼ばれる
+            override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
+                TODO("Not yet implemented")
+            }
+
+            // seekberに触ったときで呼ばれる
+            override fun onStartTrackingTouch(p0: SeekBar?) {
+                TODO("Not yet implemented")
+            }
+
+            // seekberを離したとき呼ばれる
+            override fun onStopTrackingTouch(p0: SeekBar?) {
+                TODO("Not yet implemented")
+            }
+        })
 
     }
 
