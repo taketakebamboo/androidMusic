@@ -24,4 +24,24 @@ class MusicManager(context: Context) {
         // mediaPlayer変数のreleaseメソッド呼び出し
         mediaPlayer.release()
     }
+
+    fun getDuration(): Int {
+        // 曲の秒数を取得
+        return mediaPlayer.duration
+    }
+
+    fun getPosition(): Int {
+        // 現在の再生位置を取得
+        return mediaPlayer.currentPosition
+    }
+
+    fun setSeekMsec(msec: Int) {
+        mediaPlayer.seekTo(msec)
+    }
+
+    fun intToSec(num: Int): String {
+        val min = num / 60
+        val sec = num % 60
+        return "$min".padStart(2, '0') + ":" + "$sec".padStart(2, '0')
+    }
 }

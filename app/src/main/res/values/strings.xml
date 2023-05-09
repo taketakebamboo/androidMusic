@@ -4,5 +4,5 @@
     <string name="start">Music Start</string>
     <string name="stop">Music Stop</string>
     <string name="loop">Loop</string>
-    <string name="playindex">0:00</string>
+    <string name="playindex">00:00</string>
 </resources>
